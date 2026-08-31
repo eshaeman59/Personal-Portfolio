@@ -34,15 +34,15 @@ function Hero() {
 
           <div className="hero-socials">
 
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/eshaeman59" aria-label="GitHub">
               GitHub
             </a>
 
-            <a href="#" aria-label="LinkedIn">
+            <a href="www.linkedin.com/in/h-esha-eman" aria-label="LinkedIn">
               LinkedIn
             </a>
 
-            <a href="#" aria-label="Email">
+            <a href="emanesha59@gmail.com" aria-label="Email">
               Email
             </a>
 
