@@ -1,0 +1,180 @@
+.about {
+    background: #ffffff;
+    padding: 110px 0;
+  }
+  
+  /* Main Container */
+  
+  .section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Section Heading */
+  
+  .section-heading {
+    max-width: 750px;
+    margin-bottom: 65px;
+  }
+  
+  .section-label {
+    color: #2563eb;
+  
+    font-size: 0.85rem;
+    font-weight: 700;
+  
+    letter-spacing: 2px;
+  
+    margin-bottom: 15px;
+  }
+  
+  .section-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  
+    line-height: 1.15;
+  
+    letter-spacing: -1.5px;
+  
+    color: #111827;
+  }
+  
+  .section-heading h2 span {
+    color: #2563eb;
+  }
+  
+  .section-subtitle {
+    margin-top: 20px;
+  
+    color: #6b7280;
+  
+    font-size: 1rem;
+  
+    line-height: 1.7;
+  }
+  
+  /* About Content */
+  
+  .about-content {
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+  
+    gap: 80px;
+  
+    align-items: start;
+  }
+  
+  /* Text */
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .about-text p {
+    color: #6b7280;
+  
+    font-size: 1rem;
+  
+    line-height: 1.9;
+  
+    margin-bottom: 20px;
+  }
+  
+  /* Button */
+  
+  .about-button {
+    display: inline-block;
+  
+    margin-top: 15px;
+  
+    padding: 13px 22px;
+  
+    background: #111827;
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    border-radius: 8px;
+  
+    font-size: 0.9rem;
+  
+    font-weight: 600;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background: #2563eb;
+  
+    transform: translateY(-3px);
+  }
+  
+  /* Stats */
+  
+  .about-stats {
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+  
+    gap: 18px;
+  }
+  
+  .stat-card {
+    padding: 30px;
+  
+    background: #f8fafc;
+  
+    border: 1px solid #e5e7eb;
+  
+    border-radius: 12px;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+  
+    border-color: #bfdbfe;
+  
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+  }
+  
+  .stat-card h3 {
+    color: #111827;
+  
+    font-size: 2rem;
+  
+    margin-bottom: 8px;
+  }
+  
+  .stat-card p {
+    color: #6b7280;
+  
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 850px) {
+    .about {
+      padding: 80px 0;
+    }
+  
+    .about-content {
+      grid-template-columns: 1fr;
+  
+      gap: 50px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+  
+    .stat-card {
+      padding: 25px;
+    }
+  }
