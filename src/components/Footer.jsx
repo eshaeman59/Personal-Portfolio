@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
 
         <a href="#hero" className="footer-logo">
-          Esha<span>.</span>
+          H.Esha Eman<span></span>
         </a>
 
         <div className="footer-links">
