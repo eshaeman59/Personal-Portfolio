@@ -1,5 +1,8 @@
 import "./Projects.css";
-
+import personalPortfolio from "../assets/Projects/personal-portfolio.png"
+import pepsiUIUX from "../assets/Projects/pepsiUIUX.png"
+import eCommercePlatform from "../assets/Projects/e-commerece.png"
+import smartTaskManagementSystem from "../assets/Projects/task-management-system.png"
 function Projects() {
   const projects = [
     {
@@ -8,6 +11,7 @@ function Projects() {
       description:
         "A modern and responsive personal portfolio website built to showcase my frontend development skills, projects, and technical experience with a clean and professional design.",
       technologies: ["React", "Vite", "JavaScript", "CSS"],
+      image: personalPortfolio,
       type: "Featured Project",
       liveDemo: "Ypersonal-portfolio-flame-eta.vercel.app",
       github: "https://github.com/eshaeman59/Personal-Portfolio.git",
@@ -25,6 +29,7 @@ function Projects() {
         "Express.js",
         "MongoDB",
       ],
+      image: eCommercePlatform,
       type: "Full-Stack Project",
       liveDemo: "#",
       github: "#",
@@ -42,6 +47,7 @@ function Projects() {
         "MongoDB",
         "Socket.io",
       ],
+      image: smartTaskManagementSystem,
       type: "Web Application",
       liveDemo: "#",
       github: "#",
@@ -49,15 +55,16 @@ function Projects() {
 
     {
       number: "04",
-      title: "Student Management System",
+      title: "Pepsi UI/UX Showcase",
       description:
-        "A student management application that organizes students, subjects, teachers, lectures, and examination information in one place.",
+        "A Pepsi clone website description is a project summary for a front-end replica of the official Pepsi landing page, built using core web technologies like HTML and CSS.",
       technologies: [
         "React",
         "JavaScript",
         "CSS",
         "LocalStorage",
       ],
+      image: pepsiUIUX,
       type: "Web Application",
       liveDemo: "#",
       github: "#",
@@ -93,33 +100,12 @@ function Projects() {
             >
               {/* Project Visual */}
               <div className="project-visual">
-                <div className="project-window">
-
-                  <div className="window-header">
-                    <div className="window-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-
-                    <div className="window-address">
-                      {project.title}
-                    </div>
-                  </div>
-
-                  <div className="project-preview">
-                    <div className="preview-line large"></div>
-                    <div className="preview-line"></div>
-
-                    <div className="preview-grid">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+  <img
+    src={project.image}
+    alt={`${project.title} preview`}
+    className="project-image"
+  />
+</div>
 
               {/* Project Information */}
               <div className="project-info">
